@@ -13,9 +13,8 @@ public class C03_UseConfigReaderClassAtTest {
     public void UseConfigReader(){
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
 
-        Driver.closeDriver();
-
         Driver.getDriver().get(ConfigReader.getProperty("googleUrl"));
+
         Driver.closeDriver();
 
     }
