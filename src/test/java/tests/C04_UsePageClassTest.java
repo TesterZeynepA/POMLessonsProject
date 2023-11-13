@@ -30,5 +30,12 @@ public class C04_UsePageClassTest {
 
         Assert.assertTrue(sauceTransaction.dropDownText.getText().contains("low to high"));
 
+        for (int i = 0; i < sauceTransaction.products.size(); i++) {
+            if (i<i+1){
+
+
+            }
+
+        }
     }
 }

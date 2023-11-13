@@ -5,7 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
-  /*
+ /*
       POM'de Driver icin TestBase class'ina extends etmek yerine
       Driver class'indan static method'lar kullanarak
       driver olusturup, ilgili ayarlarin yapilmasi
@@ -24,11 +24,16 @@ public class Driver {
     // create a private static WebDriver object
     private static WebDriver driver;
 
+    //singleton driver yapmak için constructorımızı private yapıyoruzki bu classın dışından new anahtarıyla
+    // driver object üretilemesin. Peki kim driver üretecek? getDriver() metodumuz.
     private Driver() { //constructor Driver
     }
+
     // create getDriver method to create and initiate the driver instance
     public static WebDriver getDriver() {
         if (driver == null) {
+            //bu şekilde sadece bir driver object üretilmesini garantiliyoruz. daha önce driver üretilmişse null olmayacaktır ve
+            //bu if bloğu çalışmayacak ve yeni driver üretilmeyecektir. Var olan (daha önce üretilmiş olan) driverı return edecektir.
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
                     driver = new ChromeDriver();
@@ -36,8 +41,8 @@ public class Driver {
                 case "firefox":
                     driver = new FirefoxDriver();
                     break;
-                case "safari" :
-                    driver=new SafariDriver();
+                case "safari":
+                    driver = new SafariDriver();
                     break;
             }
         }
