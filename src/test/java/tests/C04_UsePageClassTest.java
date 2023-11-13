@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -7,6 +8,10 @@ import pages.sauceDemo.SauceDemoLoginPage;
 import pages.sauceDemo.SauceDemoTransactions;
 import utilities.ConfigReader;
 import utilities.Driver;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class C04_UsePageClassTest {
 //Navigate to https://www.saucedemo.com/
@@ -30,12 +35,24 @@ public class C04_UsePageClassTest {
 
         Assert.assertTrue(sauceTransaction.dropDownText.getText().contains("low to high"));
 
-        for (int i = 0; i < sauceTransaction.products.size(); i++) {
-            if (i<i+1){
+        List<Double> productPrices = new ArrayList<>();
 
+        for (WebElement priceElement : sauceTransaction.products) {
 
-            }
-
+            String priceText = priceElement.getText().replace("$", "").trim();
+            double price = Double.parseDouble(priceText);
+            productPrices.add(price);
         }
+
+        Collections.sort(productPrices);
+
+        for (int i = 0; i < productPrices.size()-1; i++) {
+            if (productPrices.get(i + 1) < productPrices.get(i)){
+
+                System.out.println("Ürün fiyatları doğru sıralanmamış!");
+                break;
+            }
+        }
+
     }
 }
