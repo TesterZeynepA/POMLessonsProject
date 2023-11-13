@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d808bf8-0b8e-444c-aef6-79dab8dc7a60" name="Changes" comment="POM Lessons Project 13.11.2023">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/C04_UsePageClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/C04_UsePageClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tryingParallel.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.C04_UsePageClassTest.test">
+  <component name="RunManager" selected="TestNG.C:/Users/zeyne/IdeaProjects/POMLessonsProject/tryingParallel.xml">
     <configuration name="C02_UseDriverClass.useDriverClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="POMLessonsProject" />
       <extension name="coverage">
@@ -95,8 +96,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/zeyne/IdeaProjects/POMLessonsProject/tryingParallel.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="POMLessonsProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/tryingParallel.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/zeyne/IdeaProjects/POMLessonsProject/tryingParallel.xml" />
         <item itemvalue="TestNG.C04_UsePageClassTest.test" />
         <item itemvalue="TestNG.C03_UseConfigReaderClassAtTest.UseConfigReader" />
         <item itemvalue="TestNG.C02_UseDriverClass.useDriverClass" />
@@ -168,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699905213437</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="POM Lessons Project 13.11.2023">
+      <created>1699906009702</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699906009702</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

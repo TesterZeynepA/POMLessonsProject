@@ -1,5 +1,9 @@
 package tests.homeworks;
 
+import org.testng.annotations.Test;
+import utilities.ConfigReader;
+import utilities.Driver;
+
 public class Task01 {
     //https://www.amazon.com/ a gidilir
     //arama kutusuna {search_keyword} yazildiktan sonra arama yapilir
@@ -11,4 +15,11 @@ public class Task01 {
     //anaSayfa-aramaSayfasi-urunSayfasi-sepetSayfasi
 
 
+    @Test
+    public void test(){
+        Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
+
+
+
+    }
 }
