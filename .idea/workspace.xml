@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonBasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonCartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonSearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/homeworks/Task01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/homeworks/Task01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699908069331</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="POM Lessons Project 13.11.2023">
+      <created>1700088086549</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700088086551</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
