@@ -1,5 +1,6 @@
 package pages.amazon;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,5 +13,9 @@ public class AmazonBasePage {
 
     @FindBy(id = "twotabsearchtextbox")
     public WebElement searchBox;
+
+    public void productSearch(){
+        searchBox.sendKeys("mac" + Keys.ENTER);
+    }
 
 }

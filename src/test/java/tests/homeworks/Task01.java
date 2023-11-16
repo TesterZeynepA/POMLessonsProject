@@ -1,10 +1,8 @@
 package tests.homeworks;
 
-import org.openqa.selenium.Keys;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.amazon.AmazonBasePage;
-import pages.amazon.AmazonCartPage;
-import pages.amazon.AmazonSearchPage;
+import pages.amazon.*;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -24,30 +22,33 @@ public class Task01 {
         //https://www.amazon.com/ a gidilir
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
 
-        //arama kutusuna {search_keyword} yazildiktan sonra arama yapilir
-        AmazonBasePage amazonBasePage = new AmazonBasePage();
-        amazonBasePage.searchBox.sendKeys("mac" + Keys.ENTER);
+        AmazonHomePage amazonHomePage = new AmazonHomePage();
+        amazonHomePage.login();
 
+        //arama kutusuna {search_keyword} yazildiktan sonra arama yapilir
+       AmazonBasePage amazonBasePage= new AmazonBasePage();
+       amazonBasePage.productSearch();
 
         //gelen ilk urun sepete eklenir
-
-        AmazonSearchPage amazonSearchPage = new AmazonSearchPage();
-        amazonSearchPage.firstProduct.click();
-        amazonSearchPage.addToCartButton.click();
+        AmazonSearchPage amazonSearchPage= new AmazonSearchPage();
+        amazonSearchPage.goToFirstProduct();
+        AmazonProductPage amazonProductPage= new AmazonProductPage();
+        amazonProductPage.productAddToCart();
 
         //sepete gidilir
-        amazonSearchPage.goToCart.click();
+
+        amazonProductPage.goToCart();
 
         //sepette alinan urunun sayisi{quantity} arttirilir
         AmazonCartPage amazonCartPage = new AmazonCartPage();
-        amazonCartPage.quantity.sendKeys("3" + Keys.ENTER);
+        amazonCartPage.setQuantity("7");
 
 
+        //sepet tutari urunFiyati*quantity olarak bulunmalidir
 
+        Double actual = amazonCartPage.calculateOfPrice();
 
-
-
-
+        Assert.assertTrue(actual.equals(amazonCartPage.SubTotal.getText().substring(1)));
 
     }
 }

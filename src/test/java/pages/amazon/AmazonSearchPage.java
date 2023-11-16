@@ -10,12 +10,13 @@ public class AmazonSearchPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//div[@cel_widget_id='MAIN-SEARCH_RESULTS-3']")
+    @FindBy(xpath = "(//div[@class='a-section aok-relative s-image-fixed-height'])[1]")
     public WebElement firstProduct;
 
-    @FindBy(id = "add-to-cart-button")
-    public WebElement addToCartButton;
 
-    @FindBy(xpath = "//span[@class='nav-cart-icon nav-sprite']")
-    public WebElement goToCart;
+    public void goToFirstProduct(){
+        firstProduct.click();
+
+    }
+
 }
