@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d808bf8-0b8e-444c-aef6-79dab8dc7a60" name="Changes" comment="POM Lessons Project 13.11.2023">
+    <list default="true" id="4d808bf8-0b8e-444c-aef6-79dab8dc7a60" name="Changes" comment="POM Lessons Project 17.11.2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonBasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/amazon/AmazonSearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/homeworks/Task01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/homeworks/Task01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,13 +235,22 @@
       <option name="project" value="LOCAL" />
       <updated>1700089372150</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="POM Lessons Project 17.11.2023">
+      <created>1700168630976</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700168630976</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="POM Lessons Project first Commit message" />
     <MESSAGE value="POM Lessons Project 11.11.2023" />
     <MESSAGE value="POM Lessons Project 13.11.2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="POM Lessons Project 13.11.2023" />
+    <MESSAGE value="POM Lessons Project 16.11.2023" />
+    <MESSAGE value="POM Lessons Project 17.11.2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="POM Lessons Project 17.11.2023" />
   </component>
 </project>

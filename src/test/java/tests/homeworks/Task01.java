@@ -48,7 +48,7 @@ public class Task01 {
 
         Double actual = amazonCartPage.calculateOfPrice();
 
-        Assert.assertTrue(actual.equals(amazonCartPage.SubTotal.getText().substring(1)));
+        Assert.assertTrue(actual.equals(amazonCartPage.expectedPrice()));
 
     }
 }

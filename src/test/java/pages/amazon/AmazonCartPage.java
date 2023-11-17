@@ -41,5 +41,9 @@ public class AmazonCartPage {
         return yuvarlanmisSayi;
     }
 
+    public Double expectedPrice(){
+        Double expected = Double.parseDouble(SubTotal.getText().substring(1));
+        return expected;
+    }
 }
 
